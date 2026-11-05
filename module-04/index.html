@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Digital Art Museum — онлайн-експозиція мистецьких напрямів."
+    />
+    <title>Digital Art Museum</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="museum">
+      <aside class="sidebar">
+        <a class="logo" href="./index.html">
+          DIGITAL <br />
+          ART MUSEUM
+          <span>TIMELESS VISIONS</span>
+        </a>
+
+        <nav class="navigation">
+          <ol class="navigation-list">
+            <li>
+              <a
+                class="navigation-link is-active"
+                href="#modernism"
+                aria-current="page"
+              >
+                01 Modernism
+              </a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#surrealism"> 02 Surrealism </a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#abstract"> 03 Abstract </a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#contemporary">
+                04 Contemporary
+              </a>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="visit">
+          <p>VISIT TODAY</p>
+          <span>09:00 — 19:00</span>
+        </div>
+      </aside>
+
+      <main class="exhibitions">
+        <ol class="exhibitions-list">
+          <li class="exhibition exhibition-modernism" id="modernism">
+            <article class="exhibition-content">
+              <span class="exhibition-number">01</span>
+              <h2 class="exhibition-title">Modernism</h2>
+              <p class="exhibition-period">1900 — 1945</p>
+              <p class="exhibition-description">
+                A movement that broke away from tradition and embraced
+                innovation, minimalism and new materials, shaping the
+                foundations of modern architecture and design.
+              </p>
+              <a class="exhibition-link" href="#modernism"
+                >Explore exhibition</a
+              >
+            </article>
+          </li>
+
+          <li class="exhibition exhibition-surrealism" id="surrealism">
+            <article class="exhibition-content">
+              <span class="exhibition-number">02</span>
+              <h2 class="exhibition-title">Surrealism</h2>
+              <p class="exhibition-period">1920s — Present</p>
+              <p class="exhibition-description">
+                An artistic movement where imagination surpasses reality,
+                inviting visitors into dreamlike spaces filled with unexpected
+                forms and symbolic storytelling.
+              </p>
+              <a class="exhibition-link" href="#surrealism"
+                >Discover collection</a
+              >
+            </article>
+          </li>
+
+          <li class="exhibition exhibition-abstract" id="abstract">
+            <article class="exhibition-content">
+              <span class="exhibition-number">03</span>
+              <h2 class="exhibition-title">Abstract Art</h2>
+              <p class="exhibition-period">1940s — Present</p>
+              <p class="exhibition-description">
+                Bold colors, expressive shapes and dynamic compositions create
+                powerful visual experiences that encourage personal
+                interpretation beyond traditional forms.
+              </p>
+              <a class="exhibition-link" href="#abstract">View gallery</a>
+            </article>
+          </li>
+
+          <li class="exhibition exhibition-contemporary" id="contemporary">
+            <article class="exhibition-content">
+              <span class="exhibition-number">04</span>
+              <h2 class="exhibition-title">Contemporary</h2>
+              <p class="exhibition-period">2000 — Today</p>
+              <p class="exhibition-description">
+                Contemporary artists blend technology, design and immersive
+                experiences to redefine the relationship between people, space
+                and creativity.
+              </p>
+              <a class="exhibition-link" href="#contemporary"
+                >Visit exhibition</a
+              >
+            </article>
+          </li>
+        </ol>
+      </main>
+    </div>
+  </body>
+</html>

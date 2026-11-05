@@ -1,0 +1,142 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-size: 16px;
+  background: #f5f3ef;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.museum {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+  height: 100vh;
+  width: 300px;
+  padding: 48px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.logo span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.navigation-link {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #b45a3c;
+}
+
+.visit {
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.exhibitions {
+  flex-grow: 1;
+}
+
+.exhibition {
+  min-height: min(100vh, 1100px);
+  background-color: #4a4f4e;
+  background-position: center;
+  background-size: cover;
+}
+
+.exhibition-content {
+  width: 500px;
+  padding: 48px;
+}
+
+.exhibition-number {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  font-size: 64px;
+  line-height: 1.1875;
+  color: #b45a3c;
+}
+
+.exhibition-title {
+  margin-bottom: 10px;
+  font-size: 48px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+
+.exhibition-period {
+  margin-bottom: 10px;
+  color: #b45a3c;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.exhibition-description {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.exhibition-link {
+  padding-bottom: 6px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #b45a3c;
+}
