@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #fff;
   font-size: 16px;
   background: #f5f3ef;
@@ -38,6 +38,10 @@ p {
 }
 
 .sidebar {
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -65,6 +69,13 @@ p {
   color: #4d4d4d;
 }
 
+.sidebar-line {
+  width: 100%;
+  height: 1px;
+  background-color: #4d4d4d;
+  flex-shrink: 0;
+}
+
 .navigation-list {
   display: flex;
   flex-direction: column;
@@ -79,8 +90,21 @@ p {
   color: #1a1a1a;
 }
 
+.navigation-link.is-active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 14px);
+  /* left: -48px; */
+  width: 34px;
+  height: 4px;
+  background-color: #b45a3c;
+  transform: translateY(-50%);
+}
+
 .navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:focus,
+.navigation-link.is-active {
   color: #b45a3c;
 }
 
@@ -99,16 +123,34 @@ p {
   background-color: #4a4f4e;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+.exhibition-modernism {
+  background-image: url("../images/modernism.jpg");
+}
+.exhibition-surrealism {
+  background-image: url("../images/sur.jpg");
+}
+.exhibition-abstract {
+  background-image: url("../images/abstarct.jpg");
+}
+.exhibition-contemporary {
+  background-image: url("../images/CONTEMPORARY.jpg");
 }
 
 .exhibition-content {
+  position: sticky;
+  top: 0;
   width: 500px;
   padding: 48px;
+  background: linear-gradient(270deg, rgba(15, 17, 21, 0) 0%, #0f1115 100%);
 }
 
 .exhibition-number {
   display: inline-block;
   margin-bottom: 10px;
+  border-top: 1px solid #b45a3c;
 
   font-size: 64px;
   line-height: 1.1875;
