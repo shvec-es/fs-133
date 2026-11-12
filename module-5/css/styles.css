@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #fff;
   color: #2c2c2e;
   display: flex;
@@ -19,4 +19,79 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   margin: -1px;
+}
+
+.radio-field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.custom-radio {
+  position: relative;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: #d1d1d6;
+  /* display: inline-block; */
+}
+
+.label:hover > .custom-radio {
+  color: #aeaeb2;
+}
+
+/* Focus-visible */
+.radio:focus-visible + .label > .custom-radio {
+  outline: 1px solid #008cff;
+  outline-offset: 1px;
+}
+
+/* Disabled */
+.radio:disabled + .label > .custom-radio {
+  color: rgba(209, 209, 214, 0.5);
+}
+.radio:disabled + .label {
+  color: rgba(44, 44, 46, 0.5);
+}
+
+/* checked default */
+
+.custom-radio::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.radio:checked + .label > .custom-radio {
+  color: #1dc9a0;
+}
+.radio:checked + .label > .custom-radio::before {
+  opacity: 1;
+}
+
+/* checked hover */
+.radio:checked + .label:hover > .custom-radio {
+  color: #1ca080;
+}
+
+/* checked Focus-visible */
+.radio:checked:focus-visible + .label > .custom-radio {
+  color: #1ca080;
+}
+
+/* checked Disabled */
+.radio:checked:disabled + .label > .custom-radio {
+  color: rgba(29, 201, 160, 0.5);
 }
