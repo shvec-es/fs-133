@@ -24,17 +24,43 @@
   </head>
   <body>
     <section class="catalog-section">
-      <div class="container">
+      <div class="container catalog-container">
         <h2 class="catalog-title">Catalog</h2>
 
         <ul class="catalog-list">
           <li class="catalog-item">
             <img
               src="./images/watch-1.png"
+              srcset="./images/watch-1.png 1x, ./images/watch-1@2x.png 2x"
               alt="Garmin Fenix 7X Pro Sapphire"
               width="304"
               height="312"
             />
+            <!-- <picture class="catalog-img-box">
+              <source
+                srcset="
+                  /src/img/catalog/catalog-d-2@1x.webp 1x,
+                  /src/img/catalog/catalog-d-2@2x.webp 2x
+                "
+                media="(min-width: 1280px)" />
+              <source
+                srcset="
+                  /src/img/catalog/catalog-t-2@1x.webp 1x,
+                  /src/img/catalog/catalog-t-2@2x.webp 2x
+                "
+                media="(min-width: 768px)" />
+              <source
+                srcset="
+                  /src/img/catalog/catalog-m-2@1x.webp 1x,
+                  /src/img/catalog/catalog-m-2@2x.webp 2x
+                " />
+              <img
+                class="catalog-img"
+                src="/src/img/catalog/catalog-d-2@1x.webp"
+                alt="Foto Garmin Marq Athlete"
+                width="304"
+                height="312" />
+            </picture> -->
             <h3 class="catalog-card-title">Garmin Fenix 7X Pro Sapphire</h3>
             <p class="catalog-price">€500</p>
           </li>
