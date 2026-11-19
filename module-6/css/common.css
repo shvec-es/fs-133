@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background-color: #fbfbfb;
+  color: rgba(12, 12, 12, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
